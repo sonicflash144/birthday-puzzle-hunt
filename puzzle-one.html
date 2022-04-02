@@ -1,18 +1,19 @@
-Hello this is a test. </br>
+Hello this is a test </br>
 
 <form>
  Submit answer:</br>
- <input type=''text'' id="p1_input" name=''p1_input'' />
+ <input type="text" id="p1_input" oninput="guess()">
  <input type="submit" id="p1_button" value="Submit Answer">
 </form>
 
 <script>
- 
-if(document.getElementById("p1_button").clicked == true){
-   var p1_answer = "cool";    
-   if(p1_input == p1_answer){
-     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
-   }
+function guess(){
+  if(document.getElementById("p1_button").clicked == true){
+     let input = document.querySelector("#guess");
+     if(p1_input === "cool"){
+       window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
+     }
+  }
 }
 
  </script>
