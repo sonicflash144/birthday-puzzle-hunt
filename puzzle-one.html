@@ -1,4 +1,4 @@
-Hello this is a test </br>
+Hello this is a test! </br>
 
 <form>
  Submit answer:</br>
@@ -7,13 +7,15 @@ Hello this is a test </br>
 </form>
 
 <script>
-function guess(){
+const guess = () => {
+ 
   if(document.getElementById("p1_button").clicked == true){
      let input = document.querySelector("#guess");
-     if(p1_input === "cool"){
+     if(input.value === "cool"){
        window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
      }
   }
+ 
 }
 
  </script>
