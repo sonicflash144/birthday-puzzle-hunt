@@ -9,14 +9,15 @@ Hello this is a test. </br>
 <script>
  
 if(document.getElementById('p1_button').clicked == true){
-   if(checkAnswer(p1_input) == true){
+   var p1_answer = "cool";    
+   if(checkAnswer(p1_answer) == true){
      var newUrl = "https://sonicflash144.github.io/birthday-puzzle-hunt/";
      window.location = newUrl;
    }
 }
  
 function checkAnswer(var answer) {
-    var input = document.getElementById("userInput").value;
+    var input = document.getElementById("p1_input").value;
     if(input == answer){
       return true;
     }
