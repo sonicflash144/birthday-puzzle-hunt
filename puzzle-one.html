@@ -9,7 +9,10 @@ Hello this is a test. </br>
 <script>
  
 if(document.getElementById('p1_button').clicked == true){
-   alert("button was clicked");
+   if(checkAnswer(p1_input) == true){
+     var newUrl = "https://sonicflash144.github.io/birthday-puzzle-hunt/";
+     window.location = newUrl;
+   }
 }
  
 function checkAnswer(var answer) {
