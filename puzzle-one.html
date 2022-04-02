@@ -2,12 +2,16 @@ Hello this is a test. </br>
 
 <form action="/action_page.php">
  Submit answer:</br>
- <input type=''text'' name=''testfield'' />
- <button type="button">Submit</button>
+ <input type=''text'' name=''p1_input'' />
+ <input type="submit" value="p1_button">
 </form>
 
 <script>
-
+ 
+if(document.getElementById('p1_button').clicked == true){
+   alert("button was clicked");
+}
+ 
 function checkAnswer(var answer) {
     var input = document.getElementById("userInput").value;
     if(input == answer){
