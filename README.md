@@ -1,5 +1,5 @@
 # Happy Birthday Rich!
-
+```
                                                   *
              *
                            *             *
@@ -38,7 +38,7 @@
                                    %%%%%
                                 .,%%%%%%%,.
                            ,%%%%%%%%%%%%%%%%%%%,
-
+```
 
 To celebrate you turning 17 this year, I decided to make a puzzle hunt for you!
 
