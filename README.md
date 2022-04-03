@@ -1,6 +1,6 @@
 # Happy Birthday Rich!
 
-![]("C:\Users\ywang\Downloads\asciicake.PNG")
+![]("https://imgur.com/a/Z2jijFS")
 
 To celebrate you turning 17 this year, I decided to make a puzzle hunt for you!
 
