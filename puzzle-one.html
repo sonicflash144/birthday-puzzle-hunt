@@ -1,4 +1,7 @@
 <center>
+ 
+//-----------------Puzzle------------------
+ 
 </br>
 </br>
 <p style="font-size:20px"> I would like to tour Versailles. What should I do first? </p>
@@ -7,14 +10,23 @@
 <img src="pigpencode.png" alt="pigpen" class="center"> <p style="font-size:20px; "display:inline; white-space:nowrap;"> ? </style>
 </br> 
 </br>
+ 
 <form>
- Answer:</br>
+ Answer: 
  <input type="text" id="p1_input">
  <button type="button" id="p1_button" style="height:20px;width:80px" onclick="guess()"> Submit </button>
 </form>
-
+ 
 </center>
+ 
+//-----------------Hints------------------
+ 
+<p style="position:absolute; top:0; right:0;"> What does the Versailles clue mean? </p>
+<button type="button" id="p1_button" style="height:20px;width:80px" onclick="hint1()"> Hint 1 </button>
 
+ 
+//-------------Java Script---------------- 
+ 
 <script>
  
 function guess(){
@@ -23,5 +35,8 @@ function guess(){
      window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
    }
 }
+function hint1(){
+  alert("hint");
+ }
  
 </script>
