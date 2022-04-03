@@ -49,6 +49,15 @@ function guess(){
      window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
    }
 }
+  
+var input = document.getElementById("p1_input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("p1_button").click();
+  }
+});
  
 function hint1(){
   alert("What are some locations tourists might want to check out in Versailles? (Use Google)");
