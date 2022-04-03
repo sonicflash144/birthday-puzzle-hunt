@@ -42,21 +42,13 @@ body {
 <! --- Java Script --->
  
 <script>
- 
+
 function guess(){
    var answer = document.getElementById("p1_input").value;
    if(answer.toLowerCase() == "jackrabbit"){
      window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
    }
 }
-var myTextBox = document.getElementById('p1_input');
-myTextBox.addEventListener('keypress', function(){
-    if(e.keyCode == 13){
-     if(answer.toLowerCase() == "jackrabbit"){
-      window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
-     }
-    }
-});
  
 function hint1(){
   alert("What are some locations tourists might want to check out in Versailles? (Use Google)");
