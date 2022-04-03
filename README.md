@@ -49,4 +49,4 @@ Of course, both this website and the puzzles I made may not be very high quality
 1. There are a total of six puzzles. You must solve them in order.
 2. You may use the internet to look up information or translate ciphers.
 
-[Click here to start!](https://github.com/sonicflash144/birthday-puzzle-hunt/blob/0fc8a81f47aecd9102b8b9b8dfcb0f0297b3efa4/puzzle-one.html)
+[Click here to start!](https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-one)
