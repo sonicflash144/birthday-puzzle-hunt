@@ -1,11 +1,5 @@
 # Happy Birthday Rich!
 
-          *                                             *
-                                               *
-                    *
-                                  *
-                                                            *
-         *
                                                   *
              *
                            *             *
