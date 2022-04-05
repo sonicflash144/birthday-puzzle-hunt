@@ -42,7 +42,7 @@
 function guess(){
    var answer = document.getElementById("p2_input").value;
    if(answer.toLowerCase() == "eye" || answer.toLowerCase() == "eyes"){
-     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/");
+     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-three");
    }
   p2_input.value = '';
 }
@@ -52,7 +52,7 @@ var input = document.getElementById("p2_input");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-    document.getElementById("p1_button").click();
+    document.getElementById("p2_button").click();
   }
 });
  
