@@ -3,14 +3,14 @@
 <! --- Puzzle --->
 
 </br>
-<p style="font-size:24px;color:orange;"> Puzzle 2 </p>
+<p style="font-size:24px;color:orange;"> <strong> Puzzle 2 </strong> </p>
 <img src="faketextmsgs.png" class="center">
 </br> 
 </br>
 </br> 
 </br>
  
-<p style="font-size:30px"> <strong> Answer Clues </strong> </p>
+<p style="font-size:25px"> <strong> Answer Clues </strong> </p>
 <p style="font-size:20px"> 1. Looks, and sounds like the answer to the previous part of the puzzle. </p>
 <p style="font-size:20px"> 2. It's the window to the bottom of a person's foot. </p>
 </br> 
@@ -19,17 +19,20 @@
  Answer: 
  <input type="text" id="p2_input">
  <button type="button" id="p2_button" style="height:22px;width:80px" onclick="guess()"> Submit </button>
-
+</br> 
+</br>
+</br> 
+</br>
  
 </center>
  
 <! --- Hints --->
 <p style="font-size:20px;position:absolute; top:0; right:150;"> Hints: </p>
 
-<p style="position:absolute; top:35; right:80;">  </p>
+<p style="position:absolute; top:35; right:80;"> What do I do with the text messages? </p>
 <button type="button" style="height:20px;width:70px;position:absolute;top:50; right:2;" onclick="hint1()"> Get Hint </button>
 
-<p style="position:absolute; top:60; right:80;">  </p>
+<p style="position:absolute; top:60; right:80;"> I don't understand the "Answer Clues". </p>
 <button type="button" style="height:20px;width:70px;position:absolute;top:75; right:2;" onclick="hint2()"> Get Hint </button>
  
 <! --- Java Script --->
@@ -54,7 +57,7 @@ input.addEventListener("keyup", function(event) {
 });
  
 function hint1(){
-  alert("What are some locations tourists might want to check out in Versailles? (Use Google)");
+  alert("Notice that each text message contains exactly one pair of numbers, separated by a comma.");
  }
  function hint2(){
   alert("Use the last word of your answer from the first part of the puzzle.");
