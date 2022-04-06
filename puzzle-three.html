@@ -14,7 +14,7 @@
 <p style="font-size:20px"> <em> You hear a broadcast over the radio the day after finding the paper. </em> </p>
 </br>
 <p style="font-size:16px"> "To whoever finds my journal, I hope you can take away three things." </p>
-<p style="font-size:16px"> "First, look at how the lines are drawn. Take the first of the smallest unit of time." </p>
+<p style="font-size:16px"> "First, look at how the lines are drawn. Take the first of the shortest common unit of time." </p>
 <p style="font-size:16px"> "Second, without the number, what do I want you to take away?" </p>
 <p style="font-size:16px"> "Finally, string together the smallest pieces from the east." </p>
 <p style="font-size:16px"> "Good luck, my friend. It's up to you to find the final missing piece." </p>
@@ -34,11 +34,14 @@
 <! --- Hints --->
 <p style="font-size:20px;position:absolute; top:0; right:150;"> Hints: </p>
 
-<p style="position:absolute; top:35; right:80;"> What do I do with the text messages? </p>
+<p style="position:absolute; top:35; right:80;"> I don't understand the clue about the unit of time. </p>
 <button type="button" style="height:20px;width:70px;position:absolute;top:50; right:2;" onclick="hint1()"> Get Hint </button>
 
-<p style="position:absolute; top:60; right:80;"> I don't understand the "Answer Clues". </p>
+<p style="position:absolute; top:60; right:80;"> I don't understand the clue about what the speaker wants me to take away. </p>
 <button type="button" style="height:20px;width:70px;position:absolute;top:75; right:2;" onclick="hint2()"> Get Hint </button>
+
+<p style="position:absolute; top:60; right:80;"> I don't understand the clue about the pieces from the east. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:100; right:2;" onclick="hint3()"> Get Hint </button>
  
 <! --- Java Script --->
  
@@ -62,10 +65,13 @@ input.addEventListener("keyup", function(event) {
 });
  
 function hint1(){
-  alert("Notice that each text message contains exactly one pair of numbers, separated by a comma. Does that format remind you of anything?");
+  alert("\"How the lines are drawn\" refers to the lines in the poem. The \"shortest common unit of time\" is a second.");
  }
  function hint2(){
-  alert("In Clue #1, the placement of the comma is intentionally separating the clue into two separate clues. In Clue #2, \"bottom of a person's foot\" refers to the sole.");
+  alert("This clue is very literal. In the first sentence of his broadcast, what did the speaker say he wants you to take away? Then, remove the number from your answer.");
+ }
+ function hint3(){
+  alert("\"From the east\" is telling you to look to the rightmost content of the poem.");
  }
  
 </script>
