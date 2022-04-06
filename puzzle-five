@@ -1,0 +1,66 @@
+<center>
+
+<! --- Puzzle --->
+
+</br>
+<p style="font-size:30px;color:Blue;"> <strong> Puzzle 5 </strong> </p>
+<p style="font-size:20px"> <em> One day, while casually strolling through the neighborhood, your eye catches on <br>an old scrap of scroll lying on the floor. You pick it up and examine it. </em> </p>
+<img src="scrollp3.png" class="center">
+</br> 
+</br>
+ 
+<p style="font-size:20px"> <em> The day after finding the paper, you hear a broadcast over the radio. </em> </p>
+<p style="font-size:16px"> "To whoever finds my journal, I hope you can take away three things. First, look at how the lines are drawn. <br>Take the first of the shortest common unit of time. Second, without the number, what do I want you to take away? <br>Finally, string together the smallest pieces from the east. Good luck, my friend. It's up to you to find the final missing piece." </p>
+</br>
+
+ Answer: 
+ <input type="text" id="p5_input">
+ <button type="button" id="p5_button" style="height:22px;width:80px" onclick="guess()"> Submit </button>
+ 
+</center>
+ 
+<! --- Hints --->
+<p style="font-size:20px;position:absolute; top:0; right:150;"> Hints: </p>
+
+<p style="position:absolute; top:35; right:80;"> I don't understand the clue about the unit of time. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:50; right:2;" onclick="hint1()"> Get Hint </button>
+
+<p style="position:absolute; top:60; right:80;"> I don't understand the clue about what the speaker wants me to take away. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:75; right:2;" onclick="hint2()"> Get Hint </button>
+
+<p style="position:absolute; top:85; right:80;"> I don't understand the clue about the pieces from the east. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:100; right:2;" onclick="hint3()"> Get Hint </button>
+ 
+<! --- Java Script --->
+ 
+<script>
+
+function guess(){
+   var answer = document.getElementById("p5_input").value;
+   if(answer.toLowerCase() == "change"){
+     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-four");
+   }
+  p5_input.value = '';
+}
+  
+var input = document.getElementById("p3_input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("p5_button").click();
+  }
+});
+ 
+function hint1(){
+  alert("\"How the lines are drawn\" refers to the lines in the poem. The \"shortest common unit of time\" is a second.");
+ }
+ function hint2(){
+  alert("This clue is very literal. In the first sentence of his broadcast, what did the speaker say he wants you to take away? Then, remove the number from your answer.");
+ }
+ function hint3(){
+  alert("\"From the east\" is telling you to look to the rightmost content of the poem.");
+ }
+ 
+</script>
+
