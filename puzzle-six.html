@@ -1,1 +1,73 @@
+<center>
+
+<! --- Puzzle --->
+
+</br>
+<p style="font-size:30px;color:Purple;"> <strong> Puzzle 6 </strong> </p>
+<p style="font-size:40px"> dnwrn gnw </p>
+</br> 
+</br>
+ 
+<p style="font-size:20px"> <em> Perform the following steps to translate the message. </em> </p>
+</br>
+<p style="font-size:20px"> 1. </p>
+<img src="caesarnewp5.PNG" class="center">
+</br>
+<p style="font-size:20px"> 2. </p>
+<img src="turkey.PNG" class="center">
+<p style="font-size:20px"> 3. Convert your answer into a 4 character string. </p>
+</br>
+</br>
+</br>
+</br>
+
+ Answer: 
+ <input type="text" id="p6_input">
+ <button type="button" id="p6_button" style="height:22px;width:80px" onclick="guess()"> Submit </button>
+</br> 
+</br>
+</br> 
+</br>
+
+</center>
+ 
+<! --- Hints --->
+<p style="font-size:20px;position:absolute; top:0; right:150;"> Hints: </p>
+
+<p style="position:absolute; top:35; right:80;"> I don't know what to do with the picture of the turkey. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:50; right:2;" onclick="hint1()"> Get Hint </button>
+
+<p style="position:absolute; top:60; right:80;"> I don't know how to convert my answer into a 4 character string. </p>
+<button type="button" style="height:20px;width:70px;position:absolute;top:75; right:2;" onclick="hint2()"> Get Hint </button>
+ 
+<! --- Java Script --->
+ 
+<script>
+
+function guess(){
+   var answer = document.getElementById("p6_input").value;
+   if(answer.toLowerCase() == "2ne1"){
+     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-six");
+   }
+  p6_input.value = '';
+}
+  
+var input = document.getElementById("p3_input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("p6_button").click();
+  }
+});
+ 
+function hint1(){
+  alert("Could the string you currently have be in another language?");
+ }
+ function hint2(){
+  alert("The number you have is also the name of a certain South Korean group.");
+ }
+ 
+</script>
+
 
