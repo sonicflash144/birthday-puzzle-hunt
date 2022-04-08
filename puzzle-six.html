@@ -16,7 +16,10 @@
 </br>
 <p style="font-size:20px"> 1. </p>
 <audio controls>
- <source src="we'llmeetagainbackwardsaudio.mp3" type="audio/mpeg">
+ <source src="we'llmeetagainbackwardsaudio.mp3" id = "mct" type="audio/mpeg">
+</audio>
+<audio controls>
+ <source src="" id = "mct" type="audio/mpeg">
 </audio>
 <img src="we'll meet again bckwds.PNG" class="center">
 </br>
@@ -62,8 +65,13 @@
 
 function guess(){
    var answer = document.getElementById("p6_input").value;
-   if(answer.toLowerCase() == "2ne1"){
-     window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-six");
+   var hello = document.getElementById("mct").src;
+   if(answer.toLowerCase() == "my castle town"){
+    
+     
+     hello = "mctcorrectaudio.mp3";
+    
+     <! --- window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-six"); --->
    }
   p6_input.value = '';
 }
