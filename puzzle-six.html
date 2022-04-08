@@ -21,7 +21,7 @@
  <img src="my castle town.PNG" class="center">
 
 <audio controls>
- <source src="" id = "mct" type="audio/mpeg">
+ <source src="" id = "mct" type="audio/mpeg" display = "none">
 </audio>
 </br>
 
@@ -29,7 +29,7 @@
 
 <p style="font-size:20px"> 2. </p>
 <audio controls>
- <source src="we'llmeetagainbackwardsaudio" id = "mct" type="audio/mpeg">
+ <source src="we'llmeetagainbackwardsaudio.mp3" id = "mct" type="audio/mpeg">
 </audio>
 <img src="we'll meet again.PNG" class="center">
 </br>
@@ -72,11 +72,10 @@
 
 function guess(){
    var answer = document.getElementById("p6_input").value;
-   var hello = document.getElementById("mct").src;
    if(answer.toLowerCase() == "my castle town"){
     
      
-     hello = "mctcorrectaudio.mp3";
+     document.getElementById("mct").style.display = "block";
     
      <! --- window.location.assign("https://sonicflash144.github.io/birthday-puzzle-hunt/puzzle-six"); --->
    }
