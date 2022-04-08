@@ -14,10 +14,6 @@
 </audio>
 
  <img src="my castle town.PNG" class="center">
-
-<audio>
- <source src="mctcorrectaudio.mp3" hidden="hidden" id = "mct" type="audio/mpeg">
-</audio>
 </br>
 
 
@@ -41,6 +37,16 @@
 </br>
 </br>
 </br>
+
+<p style="font-size:20px"> Take these characters from your answers, (start counting from 1): 4 12 14 / 13 / 2 </p>
+
+<p style="font-size:20px"> Final Step: </p>
+<img src="my castle town.PNG" class="center">
+<br>
+
+<p style="font-size:20px"> <strong> Instructions: </strong> </p>
+<p style="font-size:20px"> You will need to find THREE index cards hidden in various places. Each clue will have <br>a piece of your answer. Clues #1 and #2 will give you hints for the location of the next clue. </p>
+
 
  Answer: 
  <input type="text" id="p6_input">
@@ -68,7 +74,7 @@
 function guess(){
    var answer = document.getElementById("p6_input").value;
    if(answer.toLowerCase() == "my castle town"){ 
-     answer.removeAttribute("hidden");
+     
    }
    p6_input.value = '';
 }
